@@ -44,7 +44,7 @@ This project is a simple chatbot powered by Google's Gemini model. It uses Strea
 ## File Structure
 
 ```
-NLP-ASSIGNMENT-Y2S3/             # Root project directory
+document-llm/             # Root project directory
 ├── src/                        # Source code directory
 │   └── app/                    # Application package
 │       ├── __init__.py         # Makes 'app' a Python package
@@ -60,7 +60,7 @@ NLP-ASSIGNMENT-Y2S3/             # Root project directory
 └── README.md                   # Project documentation
 ```
 
-*   **`NLP-ASSIGNMENT-Y2S3/`**:  The main folder for this project.
+*   **`document-llm/`**:  The main folder for this project.
 *   **`src/`**: Contains the Python source code.
     *   **`app/`**:  A subfolder for application-specific code.
         *   **`__init__.py`**: Makes `app` a Python package.
@@ -88,7 +88,7 @@ docker-compose down
 To remove the Docker image, run:
 
 ```bash
-docker rmi nlp-app --force
+docker rmi document-llm --force
 ```
 
 **Note:** The `--force` flag is needed if the image is currently in use by a container.  You might see an error if the image doesn't exist, which is fine.
