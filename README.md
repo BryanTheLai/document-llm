@@ -50,30 +50,15 @@ document-llm/             # Root project directory
 │       ├── __init__.py         # Makes 'app' a Python package
 │       ├── models.py           # Data models
 │       ├── prompts.py          # Gemini prompts
-│       ├── routers.py          # API routes (FastAPI)
 │       ├── services.py         # Business logic
 │       ├── utils.py            # Utility functions
-│       └── views.py            # UI views (if separate)
+│       ├── views.py            # UI views (if separate)
+│       ├── routers.py          # API routes (FastAPI)
 ├── main.py                     # Main application file
 ├── docker-compose.yml          # Docker setup
 ├── dockerfile                  # Docker image definition
 └── README.md                   # Project documentation
 ```
-
-*   **`document-llm/`**:  The main folder for this project.
-*   **`src/`**: Contains the Python source code.
-    *   **`app/`**:  A subfolder for application-specific code.
-        *   **`__init__.py`**: Makes `app` a Python package.
-        *   **`models.py`**:  For defining data structures.
-        *   **`prompts.py`**:  For storing prompts used with the Gemini model.
-        *   **`routers.py`**:  For handling application routing (if using FastAPI).
-        *   **`services.py`**:  For containing business logic and services.
-        *   **`utils.py`**:  For utility functions and helper code.
-        *   **`views.py`**: For code related to displaying information (if separating views).
-*   **`main.py`**: The main file to run the chatbot application.
-*   **`docker-compose.yml`**:  Configuration for Docker to run the app.
-*   **`dockerfile`**:  Instructions to build the Docker image.
-*   **`README.md`**: This file, providing information about the project.
 
 ## Stopping the Application
 
