@@ -20,6 +20,7 @@ class SystemPrompt:
     def important_rules(self) -> str:
         rules = """
         Important Rules:
+        1. All documents are uploaded by the user.
         """
         return rules
     
