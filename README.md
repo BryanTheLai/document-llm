@@ -4,9 +4,8 @@ This project is a simple chatbot powered by Google's Gemini model. It uses Strea
 
 ## Prerequisites
 
--   Docker
--   Docker Compose
--   A Google API key (set it in a `.env` file)
+-   [Docker](https://www.docker.com/)
+-   [Docker Compose](https://www.docker.com/)
 
 ## Setup
 
