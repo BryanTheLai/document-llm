@@ -6,7 +6,7 @@ services:
     ports:
       - "127.0.0.1:8501:8501"
     volumes:
-      - ./src:/app/app   # Mounts the entire src directory
+      - ./src:/app   # Mounts the entire src directory
       - ./src/main.py:/app/main.py  # Mounts the main.py file specifically
     container_name: nlp-dev
     env_file:
