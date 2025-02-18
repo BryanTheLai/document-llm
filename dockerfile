@@ -9,9 +9,8 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the source code
-COPY src/app ./app
-COPY src/main.py main.py
+COPY src/app ./
 
 EXPOSE 8501
 
-CMD ["streamlit", "run", "main.py", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "app/app.py", "--server.address=0.0.0.0"]
