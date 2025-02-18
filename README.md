@@ -51,15 +51,18 @@ document-llm/
 │   └── app/              # Application package
 │       ├── __init__.py       # Makes 'app' a Python package
 │       ├── llm/              # LLM related code
-│       │   ├── __init__.py   # Makes 'app.llm' a Python package
+│       │   ├── __init__.py   # Makes 'llm' a Python package
 │       │   └── prompts.py    # Gemini prompts
 │       ├── rag/              # RAG related code
-│       │   ├── __init__.py   # Makes 'app.rag' a Python package
+│       │   ├── __init__.py   # Makes 'rag' a Python package
 │       │   ├── database.py   # Database interaction (pgvector)
 │       │   └── models.py     # Data models for RAG
 │       ├── ui/               # User interface related code
-│       │   ├── __init__.py   # Makes 'app.ui' a Python package
+│       │   ├── __init__.py   # Makes 'ui' a Python package
 │       │   └── views.py      # Streamlit UI components
+│       ├── utils/               # utils
+│       │   ├── __init__.py   # Makes 'utils' a Python package
+│       │   └── PDFProcessor.py      # Pdf utils
 │       └── app.py          # Main application logic
 
 ```
@@ -107,7 +110,7 @@ docker rmi document-llm --force
 4.  **Run the Streamlit application:**
 
     ```bash
-    streamlit run src/main.py --server.address=0.0.0.0
+    streamlit run src/app/app.py --server.address=0.0.0.0
     ```
 
     **Note:**  Make sure you are running the command from the root directory of your project.
@@ -116,4 +119,4 @@ docker rmi document-llm --force
 
 -   If you encounter errors related to the API key, double-check that the `.env` file is correctly configured and that the API key is valid.
 -   If you encounter errors related to the Docker image, ensure that Docker is properly installed and running.
--   If you have any other issues, consult the documentation for Docker, Docker Compose, Streamlit, and LiteLLM.
+-   If you have any other issues, consult the documentation for Docker, Docker Compose, Streamlit

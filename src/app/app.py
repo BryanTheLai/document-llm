@@ -3,8 +3,8 @@ import streamlit as st
 from dotenv import load_dotenv
 import os
 import google.generativeai as genai
-from app.prompts import SystemPrompt
-from app.utils import PDFProcessor
+from llm.prompts import SystemPrompt
+from utils.PDFProcessor import PDFProcessor
 import tempfile
 
 st.set_page_config(page_title="Chat with Document", page_icon="📄")
