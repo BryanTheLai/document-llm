@@ -10,10 +10,9 @@ This project is a simple chatbot powered by Google's Gemini model. It uses Strea
 ## Setup
 
 1.  **Clone the repository:**
-
     ```bash
-    git clone <your-repository-url>
-    cd <your-repository-directory>
+    git clone https://github.com/BryanTheLai/document-llm.git
+    cd document-llm
     ```
 
 2.  **Create a `.env` file:**
@@ -43,21 +42,28 @@ This project is a simple chatbot powered by Google's Gemini model. It uses Strea
 ## File Structure
 
 ```
-document-llm/             # Root project directory
-├── src/                        # Source code directory
-│   └── app/                    # Application package
-│       ├── __init__.py         # Makes 'app' a Python package
-│       ├── models.py           # Data models
-│       ├── prompts.py          # Gemini prompts
-│       ├── services.py         # Business logic
-│       ├── utils.py            # Utility functions
-│       ├── views.py            # UI views (if separate)
-│       ├── routers.py          # API routes (FastAPI)
-├── main.py                     # Main application file
-├── docker-compose.yml          # Docker setup
-├── dockerfile                  # Docker image definition
-└── README.md                   # Project documentation
+document-llm/
+├── README.md           # Project documentation
+├── requirements.txt      # Project dependencies
+├── Dockerfile            # Docker image definition
+├── docker-compose.yml    # Docker setup
+├── src/                  # Source code directory
+│   └── app/              # Application package
+│       ├── __init__.py       # Makes 'app' a Python package
+│       ├── llm/              # LLM related code
+│       │   ├── __init__.py   # Makes 'app.llm' a Python package
+│       │   └── prompts.py    # Gemini prompts
+│       ├── rag/              # RAG related code
+│       │   ├── __init__.py   # Makes 'app.rag' a Python package
+│       │   ├── database.py   # Database interaction (pgvector)
+│       │   └── models.py     # Data models for RAG
+│       ├── ui/               # User interface related code
+│       │   ├── __init__.py   # Makes 'app.ui' a Python package
+│       │   └── views.py      # Streamlit UI components
+│       └── app.py          # Main application logic
+
 ```
+
 
 ## Stopping the Application
 
