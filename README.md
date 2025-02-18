@@ -1,6 +1,6 @@
 # Gemini Chatbot Application
 
-This project is a simple chatbot powered by Google's Gemini model. It uses Streamlit for the user interface and LiteLLM to interact with the Gemini API.
+This project is a simple chatbot powered by Google's Gemini model. It uses Streamlit for the user interface to interact with the Gemini API.
 
 ## Prerequisites
 
